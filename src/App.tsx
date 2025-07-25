@@ -1,7 +1,6 @@
 import { DiffViewer } from "@/components/DiffViewer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { Code, Copy, FileText, GitCompare, RotateCcw, Zap } from "lucide-react";
 import { useState } from "react";
@@ -219,15 +218,7 @@ function App() {
                   Reset
                 </Button>
               </div>
-
-              <Separator className="bg-border mb-4" />
-
-              {/* Diff Display */}
-              <div className="bg-white rounded-lg shadow-lg h-[calc(100vh-20rem)] overflow-auto">
-                <div className="p-4">
-                  <DiffViewer file1={file1} file2={file2} />
-                </div>
-              </div>
+              <DiffViewer file1={file1} file2={file2} />
             </div>
           )}
         </div>

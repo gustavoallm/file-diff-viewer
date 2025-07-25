@@ -158,7 +158,7 @@ export function DiffViewer({ file1, file2 }: DiffViewerProps) {
       </CardHeader>
       <CardContent>
         <div className="bg-[#0a0a0a] rounded-lg border border-gray-800 overflow-hidden">
-          <div className="max-h-[calc(100vh-5rem)] overflow-y-auto">
+          <div className="max-h-[calc(100vh-18rem)] overflow-y-auto">
             {diffLines.map((line, index) => (
               <div
                 key={index}
