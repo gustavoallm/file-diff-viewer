@@ -138,7 +138,7 @@ export function DiffViewer({ file1, file2 }: DiffViewerProps) {
   );
 
   return (
-    <Card className="h-[calc(100vh-12rem)]">
+    <Card className="h-[calc(100vh-15rem)] border-none">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-primary">Diff Results</CardTitle>
@@ -157,8 +157,8 @@ export function DiffViewer({ file1, file2 }: DiffViewerProps) {
         </div>
       </CardHeader>
       <CardContent>
-        <div className="bg-[#0a0a0a] rounded-lg border border-gray-800 overflow-hidden">
-          <div className="max-h-[calc(100vh-18rem)] overflow-y-auto">
+        <div className="bg-black rounded-lg overflow-hidden">
+          <div className="max-h-[calc(100vh-22rem)] overflow-y-auto">
             {diffLines.map((line, index) => (
               <div
                 key={index}
